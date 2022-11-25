@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Qdbetter-bold";
+  src: url("../fonts/Qdbetter/Qdbettercomicsansbold-511d8.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Qdbetter";
+  src: url("../fonts/Qdbetter/Qdbettercomicsans-jEEeG.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+#keyboard button {
+  font-family: "Qdbetter";
+  border: 2px solid black;
+  width: 25px;
+  height: 25px;
+}
+#keyboard button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 500ms ease-in-out;
+  z-index: 2;
+}
+
+#modal-content {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+h1 {
+  font-family: "Qdbetter-bold";
+  letter-spacing: 4px;
+}
+
+.grid-container {
+  width: 300px;
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid-container button {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: transform 0.4s;
+}
+.grid-container button.moved {
+  transform: rotateY(360deg);
+}
+
+.wrapper {
+  position: static;
+}
+.wrapper svg {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#hangman {
+  height: 50vh;
+}
+
+#hangman > img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+}
+
+#game-state {
+  height: 10vh;
+}
+
+main,
+#modal {
+  font-family: "Qdbetter";
+  letter-spacing: 1.5px;
+}
+
+body {
+  background-color: wheat;
+}

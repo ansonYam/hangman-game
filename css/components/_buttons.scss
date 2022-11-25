@@ -1,0 +1,13 @@
+#keyboard {
+    button {
+        font-family: 'Qdbetter';
+        border: 2px solid black;
+        width: 25px;
+        height: 25px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: lightgray;
+    }
+}

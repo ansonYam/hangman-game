@@ -1,0 +1,30 @@
+@import 'base/reset';
+@import 'base/fonts';
+@import 'components/buttons';
+@import 'components/popup';
+@import 'layout/header';
+@import 'layout/grid';
+
+#hangman {
+    height: 50vh;
+}
+
+#hangman > img {
+    display: block;
+    max-width: 200px;
+    height: auto;
+}
+
+#game-state {
+    height: 10vh;
+}
+
+main,
+#modal {
+    font-family: 'Qdbetter';
+    letter-spacing: 1.5px;
+}
+
+body {
+    background-color: wheat;
+}
