@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer="defer"></script>
     <script src="js/jquery.drawsvg.min.js" defer="defer"></script>
-    <script src="js/script.js" defer="defer"></script>
+    <script src="js/main.js" type="module" defer="defer"></script>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <div id="hint"></div>
         </div>
 
-        <div id="keyboard" class="grid-container">
+        <div id="keyboard">
             <div class="row">
                 <button type="button" value="q">q</button>
                 <button type="button" value="w">w</button>
@@ -62,10 +62,11 @@
     <aside id="modal">
         <div id="modal-content">
             <p id="game-over"></p>
-            <button type="button" id="again">Play Again?</button>
+            <button type="button" id="play-again">Play Again?</button>
         </div>
     </aside>
-    <div class="wrapper">
+    <!-- hangman svg adapted from https://c8.alamy.com/comp/W4603X/illustration-of-a-hanged-man-vector-dead-in-the-loop-metaphor-linear-style-illustration-for-website-or-presentation-the-end-the-finale-of-life-W4603X.jpg -->
+    <div id="hangman">
         <svg id="gallows" viewBox="0 0 300 400" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
             height="50vh">
             <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">

@@ -1,7 +1,8 @@
-.grid-container {
-    width: 300px;
+#keyboard {
+    display: grid;
+    gap: 5px;
     grid-template-rows: repeat(3, 1fr);
-
+    width: 300px;
     button {
         backface-visibility: hidden;
         transition: transform 0.4s;
@@ -12,11 +13,11 @@
     }
 }
 
-.wrapper {
+#hangman {
     position: static;
     svg {
         position: absolute;
         bottom: 10px;
-        right: 10px;
+        left: 10px;
     }
 }
