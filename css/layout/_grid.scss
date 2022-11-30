@@ -1,23 +1,46 @@
+main {
+    display: grid;
+    gap: 15px;
+}
+
 #keyboard {
     display: grid;
-    gap: 5px;
+    gap: 3px;
     grid-template-rows: repeat(3, 1fr);
-    width: 300px;
-    button {
-        backface-visibility: hidden;
-        transition: transform 0.4s;
-    }
+    width: 610px;
 
-    button.moved {
-        transform: rotateY(360deg);
+    button {
+        margin: 1px;
     }
 }
 
 #hangman {
     position: static;
+
     svg {
+        // not every screen will have my screen height
+        height: 45vh;
         position: absolute;
         bottom: 10px;
         left: 10px;
     }
+}
+
+@include mobile {
+
+    // smaller buttons for small screens
+    #keyboard {
+        padding: 15px;
+        width: 350px;
+
+        button {
+            font-size: 12px;
+            height: 25px;
+            width: 25px;
+        }
+    }
+}
+
+@include desktop {
+    // wide screens different layout? center everything maybe
 }

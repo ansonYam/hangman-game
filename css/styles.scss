@@ -1,19 +1,16 @@
-@import 'base/reset';
-@import 'base/fonts';
-@import 'components/buttons';
-@import 'components/popup';
-@import 'layout/header';
-@import 'layout/grid';
+@import 
+    'abstracts/mixins',
+    'abstracts/variables';
 
-#game-state {
-    height: 10vh;
-}
+@import 
+    'base/base',
+    'base/fonts';
 
-main {
-    font-family: 'Qdbetter';
-    letter-spacing: 1.5px;
-}
-
-body {
-    background-color: wheat;
-}
+@import 
+    'components/button',
+    'components/keyboard',
+    'components/modal';
+    
+@import 
+    'layout/header',
+    'layout/grid';

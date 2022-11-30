@@ -47,7 +47,6 @@ const keyboard = {
         for (let i = 0; i < keyboardButtons.length; i++) {
             setTimeout(function () {
                 let keyboardButton = keyboardButtons[i];
-                keyboardButton.classList.toggle('moved');
                 keyboardButton.disabled = false;
             }, i * 50);
         }

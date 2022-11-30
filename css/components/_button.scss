@@ -1,0 +1,22 @@
+button {
+    border: none;
+    border-radius: 50px;
+    background: $light-color;
+    box-shadow: 5px 5px 10px $lighter-color,
+        -5px -5px 10px $lightest-color;
+    font-size: 16px;
+    font-family: 'Qdbetter';
+    letter-spacing: 1.5px;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: inset 5px 5px 10px $lighter-color,
+            inset -5px -5px 10px $lightest-color;
+    }
+
+    &:disabled {
+        box-shadow: inset 5px 5px 10px $lighter-color,
+            inset -5px -5px 10px $lightest-color;
+    }
+
+}

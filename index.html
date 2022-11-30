@@ -58,6 +58,62 @@
                 <button type="button" value="m">m</button>
             </div>
         </div>
+
+        <!-- hangman svg adapted from https://c8.alamy.com/comp/W4603X/illustration-of-a-hanged-man-vector-dead-in-the-loop-metaphor-linear-style-illustration-for-website-or-presentation-the-end-the-finale-of-life-W4603X.jpg -->
+        <div id="hangman">
+            <svg id="gallows" viewBox="0 0 300 400" style="background-color:#ffffff00"
+                xmlns="http://www.w3.org/2000/svg">
+                <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <path d="M 33 379 C 33 379 124.5 372 181.5 376.5" />
+                    <path d="M 166 378 C 166 378 169.5 9.5 174.5 10.5" />
+                    <path d="M 39.5 11.5 C 39.5 11.5 158.5 4.5 176 10" />
+                    <path
+                        d="M 51.91 7.18 C 51.91 7.18 52.64 15.55 52.64 15.55 C 52.64 15.55 64.82 4.27 64.82 4.27 C 64.82 4.27 67.55 14.09 67.55 14.09" />
+                    <path d="M 115.5 8 C 115.5 8 179.5 75 179.5 75.5" />
+                    <path d="M 64.09 11 C 64.09 11 62.64 101.91 62.09 106.27" />
+                    <path d="M 55.91 118.27 C 55.91 118.27 65.73 103.55 65.73 103.55" />
+                </g>
+            </svg>
+            <svg id="hangman_1" viewBox="0 0 300 400" style="background-color:#ffffff00"
+                xmlns="http://www.w3.org/2000/svg" height="50vh">
+                <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <path
+                        d="M 39.27 84.35 C 67.07 80.03 66.31 126.12 41.27 123.62 C 22.52 121.75 18.22 90.91 39.27 84.35 Z" />
+                </g>
+            </svg>
+            <svg id="hangman_2" viewBox="0 0 300 400" style="background-color:#ffffff00"
+                xmlns="http://www.w3.org/2000/svg" height="50vh">
+                <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <path d="M 60 113.45 C 60 113.45 68.91 140 62 196" />
+                </g>
+            </svg>
+            <svg id="hangman_3" viewBox="0 0 300 400" style="background-color:#ffffff00"
+                xmlns="http://www.w3.org/2000/svg" height="50vh">
+                <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <path d="M 62.91 114.91 C 62.91 114.91 47.82 160.73 45.09 178.91" />
+                </g>
+            </svg>
+            <svg id="hangman_4" viewBox="0 0 300 400" style="background-color:#ffffff00"
+                xmlns="http://www.w3.org/2000/svg" height="50vh">
+                <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <path d="M 61.45 114.18 C 61.45 114.18 83.09 118.73 85.64 180.91" />
+                </g>
+            </svg>
+            <svg id="hangman_5" viewBox="0 0 300 400" style="background-color:#ffffff00"
+                xmlns="http://www.w3.org/2000/svg" height="50vh">
+                <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <path
+                        d="M 63.82 298.36 C 63.82 298.36 71.82 283.64 71.82 283.64 M 62 197.27 C 62 197.27 50 260.36 72.18 283.82" />
+                </g>
+            </svg>
+            <svg id="hangman_6" viewBox="0 0 300 400" style="background-color:#ffffff00"
+                xmlns="http://www.w3.org/2000/svg" height="50vh">
+                <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <path
+                        d="M 87.22 283.43 C 87.22 283.43 81.7 297.7 81.7 297.7 M 61.64 202.73 C 61.64 202.73 67.82 252.73 87.27 283.45" />
+                </g>
+            </svg>
+        </div>
     </main>
     <aside id="modal">
         <div id="modal-content">
@@ -65,59 +121,6 @@
             <button type="button" id="play-again">Play Again?</button>
         </div>
     </aside>
-    <!-- hangman svg adapted from https://c8.alamy.com/comp/W4603X/illustration-of-a-hanged-man-vector-dead-in-the-loop-metaphor-linear-style-illustration-for-website-or-presentation-the-end-the-finale-of-life-W4603X.jpg -->
-    <div id="hangman">
-        <svg id="gallows" viewBox="0 0 300 400" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
-            height="50vh">
-            <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                <path d="M 33 379 C 33 379 124.5 372 181.5 376.5" />
-                <path d="M 166 378 C 166 378 169.5 9.5 174.5 10.5" />
-                <path d="M 39.5 11.5 C 39.5 11.5 158.5 4.5 176 10" />
-                <path
-                    d="M 51.91 7.18 C 51.91 7.18 52.64 15.55 52.64 15.55 C 52.64 15.55 64.82 4.27 64.82 4.27 C 64.82 4.27 67.55 14.09 67.55 14.09" />
-                <path d="M 115.5 8 C 115.5 8 179.5 75 179.5 75.5" />
-                <path d="M 64.09 11 C 64.09 11 62.64 101.91 62.09 106.27" />
-                <path d="M 55.91 118.27 C 55.91 118.27 65.73 103.55 65.73 103.55" />
-            </g>
-        </svg>
-        <svg id="hangman_1" viewBox="0 0 300 400" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
-            height="50vh">
-            <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                <path
-                    d="M 39.27 84.35 C 67.07 80.03 66.31 126.12 41.27 123.62 C 22.52 121.75 18.22 90.91 39.27 84.35 Z" />
-            </g>
-        </svg>
-        <svg id="hangman_2" viewBox="0 0 300 400" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
-            height="50vh">
-            <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                <path d="M 60 113.45 C 60 113.45 68.91 140 62 196" />
-            </g>
-        </svg>
-        <svg id="hangman_3" viewBox="0 0 300 400" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
-            height="50vh">
-            <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                <path d="M 62.91 114.91 C 62.91 114.91 47.82 160.73 45.09 178.91" />
-            </g>
-        </svg>
-        <svg id="hangman_4" viewBox="0 0 300 400" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
-            height="50vh">
-            <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                <path d="M 61.45 114.18 C 61.45 114.18 83.09 118.73 85.64 180.91" />
-            </g>
-        </svg>
-        <svg id="hangman_5" viewBox="0 0 300 400" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
-            height="50vh">
-            <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                <path d="M 63.82 298.36 C 63.82 298.36 71.82 283.64 71.82 283.64 M 62 197.27 C 62 197.27 50 260.36 72.18 283.82" />
-            </g>
-        </svg>
-        <svg id="hangman_6" viewBox="0 0 300 400" style="background-color:#ffffff00" xmlns="http://www.w3.org/2000/svg"
-            height="50vh">
-            <g stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                <path d="M 87.22 283.43 C 87.22 283.43 81.7 297.7 81.7 297.7 M 61.64 202.73 C 61.64 202.73 67.82 252.73 87.27 283.45" />
-            </g>
-        </svg>
-    </div>
 </body>
 
 </html>

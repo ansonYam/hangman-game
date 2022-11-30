@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $light-color;
+    font-family: 'Qdbetter';
+    letter-spacing: 1.5px;
+}

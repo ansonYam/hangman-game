@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #fca5a5;
+  font-family: "Qdbetter";
+  letter-spacing: 1.5px;
+}
+
 @font-face {
   font-family: "Qdbetter-bold";
   src: url("../fonts/Qdbetter/Qdbettercomicsansbold-511d8.ttf");
@@ -20,21 +26,32 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-#keyboard button {
-  font-family: "Qdbetter";
-  border: 2px solid black;
-  width: 25px;
-  height: 25px;
-}
-#keyboard button:hover {
-  cursor: pointer;
-  background-color: lightgray;
-}
-
-#modal,
-#modal button {
+button {
+  border: none;
+  border-radius: 50px;
+  background: #fca5a5;
+  box-shadow: 5px 5px 10px #d68c8c, -5px -5px 10px #ffbebe;
+  font-size: 16px;
   font-family: "Qdbetter";
   letter-spacing: 1.5px;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: inset 5px 5px 10px #d68c8c, inset -5px -5px 10px #ffbebe;
+}
+button:disabled {
+  box-shadow: inset 5px 5px 10px #d68c8c, inset -5px -5px 10px #ffbebe;
+}
+
+#keyboard {
+  border-radius: 25px;
+  background: #fca5a5;
+  box-shadow: inset 25px 25px 50px #d68c8c, inset -25px -25px 50px #ffbebe;
+  padding: 20px;
+}
+#keyboard button {
+  height: 50px;
+  width: 50px;
 }
 
 #modal {
@@ -53,16 +70,20 @@ html {
 }
 
 #modal-content {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 2px;
   padding: 15px;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  width: 400px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fca5a5;
+}
+#modal-content button {
+  padding: 15px;
 }
 
 h1 {
@@ -70,39 +91,39 @@ h1 {
   letter-spacing: 4px;
 }
 
+main {
+  display: grid;
+  gap: 15px;
+}
+
 #keyboard {
   display: grid;
-  gap: 5px;
+  gap: 3px;
   grid-template-rows: repeat(3, 1fr);
-  width: 300px;
+  width: 610px;
 }
 #keyboard button {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  transition: transform 0.4s;
-}
-#keyboard button.moved {
-  transform: rotateY(360deg);
+  margin: 1px;
 }
 
 #hangman {
   position: static;
 }
 #hangman svg {
+  height: 45vh;
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
 
-#game-state {
-  height: 10vh;
-}
-
-main {
-  font-family: "Qdbetter";
-  letter-spacing: 1.5px;
-}
-
-body {
-  background-color: wheat;
+@media screen and (max-width: 399px) {
+  #keyboard {
+    padding: 15px;
+    width: 350px;
+  }
+  #keyboard button {
+    font-size: 12px;
+    height: 25px;
+    width: 25px;
+  }
 }
