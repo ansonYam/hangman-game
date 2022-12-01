@@ -39,15 +39,23 @@ const game_state = {
         // update the game state (number of guesses, blanks, win / loss condition)
         guesses.innerHTML = `Guesses remaining: ${this.MAX_GUESSES - this.NUM_WRONG} / ${this.MAX_GUESSES}`;
         blanks.innerHTML = this.blank_spaces;
+        let NUM_CAT_PICS = 6;
+        let random_index = Math.floor(Math.random() * NUM_CAT_PICS);
 
         if (this.NUM_WRONG === this.MAX_GUESSES) {
-            gameOver.innerHTML = 'You lost!';
+            gameOver.innerHTML = 
+                `<p>Too bad! The word was "${this.MY_WORD}".<br>
+                Perhaps this picture of a cat will be of some comfort. </p>
+                <img src="img/cat_${random_index}.jpg" alt="Cat">`;
             keyboard.disable();
             modalFunctions.show();
         }
     
         if (!this.blank_spaces.includes('_')) {
-            gameOver.innerHTML = 'You guessed it!';
+            gameOver.innerHTML = 
+                `<p>You guessed it! <br>
+                Enjoy this picture of a cat as a reward. </p>
+                <img src="img/cat_${random_index}.jpg" alt="Cat">`;
             keyboard.disable();
             modalFunctions.show();
         }

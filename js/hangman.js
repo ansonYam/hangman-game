@@ -14,7 +14,7 @@ const hangman = {
     },
 
     update: function (number_wrong) {
-        //still replace this with map
+        // replace this with map in the future
         eval(`$hangman_` + `${number_wrong}`).drawsvg('animate');
     },
 

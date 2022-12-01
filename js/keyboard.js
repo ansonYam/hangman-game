@@ -43,7 +43,7 @@ const keyboard = {
     },
 
     reset: function () {
-        /* neat animation from CSS tricks: https://css-tricks.com/staggering-animations/ */
+        // neat animation from CSS tricks: https://css-tricks.com/staggering-animations/
         for (let i = 0; i < keyboardButtons.length; i++) {
             setTimeout(function () {
                 let keyboardButton = keyboardButtons[i];
