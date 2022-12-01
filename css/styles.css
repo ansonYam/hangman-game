@@ -31,7 +31,6 @@ button {
   border-radius: 50px;
   background: #fca5a5;
   box-shadow: 5px 5px 10px #d68c8c, -5px -5px 10px #ffbebe;
-  font-size: 16px;
   font-family: "Qdbetter";
   letter-spacing: 1.5px;
 }
@@ -48,10 +47,6 @@ button:disabled {
   background: #fca5a5;
   box-shadow: inset 25px 25px 50px #d68c8c, inset -25px -25px 50px #ffbebe;
   padding: 20px;
-}
-#keyboard button {
-  height: 50px;
-  width: 50px;
 }
 
 #modal {
@@ -91,39 +86,58 @@ h1 {
   letter-spacing: 4px;
 }
 
+html,
+body {
+  min-width: 380px;
+}
+
 main {
-  display: grid;
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+}
+
+#game_state, #modal, #modal button {
+  font-size: 18px;
 }
 
 #keyboard {
   display: grid;
-  gap: 3px;
-  grid-template-rows: repeat(3, 1fr);
-  width: 610px;
+  gap: 5px;
+  margin-top: 10px;
+  max-width: 600px;
+  width: 100%;
 }
 #keyboard button {
-  margin: 1px;
+  aspect-ratio: 1/1;
+  font-size: 18px;
+  width: 9.0909090909%;
 }
 
 #hangman {
-  position: static;
+  display: flex;
+  flex: 1;
+  position: relative;
 }
 #hangman svg {
-  height: 45vh;
+  height: 95%;
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   left: 10px;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 549px) {
+  #game_state, #modal, #modal button {
+    font-size: 14px;
+  }
   #keyboard {
     padding: 15px;
-    width: 350px;
   }
   #keyboard button {
-    font-size: 12px;
-    height: 25px;
-    width: 25px;
+    font-size: 14px;
+    width: 8.3333333333%;
+  }
+  #modal-content {
+    width: 90%;
   }
 }
