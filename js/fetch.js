@@ -1,6 +1,6 @@
 const FILE_PATH = 'data/word-list.json';
 
-/* Thanks to https://github.com/le717/PHP-Hangman/blob/master/words/word-list.json */
+// list generated here: https://randomwordgenerator.com/hangman.php
 async function fetchWord() {
     return fetch(FILE_PATH)
         .then(function (response) {

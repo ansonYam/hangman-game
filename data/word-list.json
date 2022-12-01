@@ -1,86 +1,78 @@
 [
     {
-        "word": "Grease",
-        "hint": "______ is the word."
+        "word": "Zap",
+        "hint": "Brannigan."
     },
     {
-        "word": "Butter",
-        "hint": "Saturated fat made from cow’s milk."
+        "word": "Kilobyte",
+        "hint": "Memory equal to 1,024."
     },
     {
-        "word": "Censor",
-        "hint": "To prevent freedom of speech and expression."
+        "word": "Staff",
+        "hint": "Both wizards and schools can have this."
     },
     {
-        "word": "Chevy",
-        "hint": "One of the most popular truck brands."
+        "word": "Jockey",
+        "hint": "For discs or horses."
     },
     {
-        "word": "Derby car",
-        "hint": "A self-propelled racing car."
+        "word": "Boxing",
+        "hint": "Sometimes enojyed with a round of chess."
     },
     {
-        "word": "Safari",
-        "hint": "An expedition to hunt or observe animals in Africa."
+        "word": "Wheezy",
+        "hint": "Waiter."
     },
     {
-        "word": "Detour",
-        "hint": "A long, roundabout route."
+        "word": "Galaxy",
+        "hint": "Mario in outer space."
     },
     {
-        "word": "Auction",
-        "hint": "A public sale where items are sold to the highest bidder."
+        "word": "Bandwagon",
+        "hint": "Used for carrying a group of people in a parade."
     },
     {
-        "word": "Pizza",
-        "hint": "A type of pie traditionally made with tomatoes and cheese."
+        "word": "Vex",
+        "hint": "Robotics competition for grade schoolers, also to annoy."
     },
     {
-        "word": "Restaurant",
-        "hint": "A place where people pay to sit and eat meals that are cooked and served to them."
+        "word": "Foxglove",
+        "hint": "Plant with pink, purple, or white spikes of flowers."
     },
     {
-        "word": "Pothole",
-        "hint": "A break and erosion in the pavement."
+        "word": "Wumbo",
+        "hint": "The opposite of mini, Spongebob."
     },
     {
-        "word": "Premier",
-        "hint": "The first showing of a play, movie, or TV show."
+        "word": "Unworthy",
+        "hint": "Undeserving."
     },
     {
-        "word": "Weekend",
-        "hint": "Two non-working days of the week."
+        "word": "Snazzy",
+        "hint": "Conspicuously flashy."
     },
     {
-        "word": "Crane",
-        "hint": "A tall, large machine used to move heavy objects."
+        "word": "Quixotic",
+        "hint": "Foolishly impractical, to do with a Don."
     },
     {
-        "word": "CSS",
-        "hint": "The abbreviation for Cascading Style Sheet."
+        "word": "Pizazz",
+        "hint": "Glamour."
     },
     {
-        "word": "Download",
-        "hint": "The act of transferring data from the Internet."
+        "word": "Wizards",
+        "hint": "Of Waverly Place."
     },
     {
-        "word": "PHP",
-        "hint": "The predominant server-side programming language."
+        "word": "Gizmo",
+        "hint": "Widget."
     },
     {
-        "word": "Chicken",
-        "hint": "\"Winner winner, ________ dinner!!!\""
+        "word": "Fluffiness",
+        "hint": "Quality of pancakes, ideally."
     },
     {
-        "word": "NASCAR",
-        "hint": "The National Association for Stock Car Auto Racing."
-    },
-    {
-        "word": "Blu-ray",
-        "hint": "The higher quality DVD replacement."
-    },
-    {
-        "word": "Siri",
-        "hint": "A personal digital assistant from Apple."
+        "word": "Subway",
+        "hint": "Eat fresh."
     }
 ]
